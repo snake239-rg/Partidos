@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fútbol Libre TV | Paratidos y canales deportivos en vivo</title>
+  <meta name="description" content="Fútbol Libre TV es el sitio web para ver deportes de Peru, Ecuador, Colombia, Chile, México, Argentina, Uruguay. Sin anuncios molestos.">
+  <meta name="keywords" content="fútbol libre, pelota libre, online, por internet, tv en vivo.">
+  <link rel="canonical" href="https://futbollibres.pe/">
+  <link rel="icon" type="image" href="images/logo-futbol-libre.png">
+  <meta content="INDEX, FOLLOW" name="ROBOTS">
+  <meta name="robots" content="index, follow">
+  <meta name="referrer" content="always">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fútbol Libre TV | Canales deportivos en vivo por internet">
+  <meta property="og:description" content="Fútbol Libre TV es el sitio web para ver el fútbol de Peru, Ecuador, Colombia, Chile, México, Argentina, Uruguay. Sin anuncios molestos.">
+  <meta property="og:url" content="https://futbollibres.pe/">
+  <meta property="og:site_name" content="Fútbol Libre TV | Canales deportivos en vivo por internet">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="images/futbollibre.png">
+  <meta name="twitter:description" content="Fútbol Libre TV es el sitio web para ver el fútbol de Peru, Ecuador, Colombia, Chile, México, Argentina, Uruguay. Sin anuncios molestos.">
+  <meta name="twitter:title" content="Fútbol Libre TV - Partidos y Canales de Fútbol en Vivo">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/luxon.min.js"></script>
+  <script src="js/index.js" type="module"></script>
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="/" class="logo">Fútbol Libre</a>
+    <nav class="navbar">
+      <a href="/en-vivo/liga-1-max">L1MAX</a>
+      <a href="/en-vivo/directv-sports">DirectTV Sports</a>
+      <a href="/en-vivo/espn-1">ESPN1</a>
+      <a href="/en-vivo/espn-2">ESPN2</a>
+      <a href="/en-vivo/espn-3">ESPN3</a>
+      <a href="/en-vivo/fox-sports-1">Fox Sports</a>
+      <a href="/en-vivo/fox-sports-2">Fox Sports 2</a>
+      <a href="/en-vivo/fox-sports-2">Fox Sports 3</a>
+      <a href="/en-vivo/golperu">GOLPERU</a>
+    </nav>
+    <button id="menu-toggle">
+      <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </header>
+
+  <div id="menu-modal">
+    <div class="modal-content">
+      <button id="menu-close">
+        <svg class="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <nav class="modal-nav">
+      <a href="/en-vivo/liga-1-max">L1MAX</a>
+      <a href="/en-vivo/directv-sports">DirectTV Sports</a>
+      <a href="/en-vivo/espn-1">ESPN1</a>
+      <a href="/en-vivo/espn-2">ESPN2</a>
+      <a href="/en-vivo/espn-3">ESPN3</a>
+      <a href="/en-vivo/fox-sports-1">Fox Sports</a>
+      <a href="/en-vivo/fox-sports-2">Fox Sports 2</a>
+      <a href="/en-vivo/fox-sports-2">Fox Sports 3</a>
+      <a href="/en-vivo/golperu">GOLPERU</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <h1>Fútbol Libre TV</h1>
+
+      <p class="description">
+      <strong>Fútbol libre TV</strong> online en vivo y en directo. Canales gratuitos para ver partidos del fútbol de Perú, Argentina, Chile, Colombia, Uruguay, Ecuador, Copa Libertadores, Copa Sudamericana, Champions League, LaLiga Española, y muchos más.
+      <strong>Ver Futbol Libre.</strong>canales gratuitos en HD y sin anuncios molestos.
+    </p>
+
+          <div class="container__filter">
+          <input type="search" name="search" id="search" placeholder="Buscar por evento">
+          <select name="filter_category" id="filter_category" class="filter_category">
+          
+            
+          </select>
+      </div>
+      
+    <div id="wraper">
+      <div class="agenda-header">
+        <h2 id="title-agenda"></h2>
+      </div>
+      <ul id="menu"></ul>
+    </div>
+
+    <h2 class="channels-title">Ver Canales de Fútbol, en vivo online.</h2>
+    
+
+    <div class="cards-container">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/gol_peru_7167cd54dd.webp" alt="GOLPERU">
+        </div>
+        <div class="card-content">
+          <h3>GOLPERU</h3>
+          <p>Ver GolPerú online en vivo y en directo.</p>
+          <a href="en-vivo/golperu" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="images/liga_1_max_8d490f8b2e.webp" alt="LIGA1MAX">
+        </div>
+        <div class="card-content">
+          <h3>LIGA1MAX</h3>
+          <p>Ver LIGA1MAX online en vivo y en directo.</p>
+          <a href="en-vivo/liga-1-max" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="images/movistar_deportes_2ca3b42a10.webp" alt="Movistar Deportes">
+        </div>
+        <div class="card-content">
+          <h3>M. Deportes</h3>
+          <p>Ver Movistar Deportes online en vivo.</p>
+          <a href="en-vivo/movistar-deportes" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="images/dsports_bea74cb844.webp" alt="DSports">
+        </div>
+        <div class="card-content">
+          <h3>DSports</h3>
+          <p>Ver DSports online en vivo y en directo.</p>
+          <a href="en-vivo/directv-sports" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+       <div class="card">
+        <div class="card-image">
+          <img src="images/dsports_2_3481b3d20c.webp" alt="DSports2">
+        </div>
+        <div class="card-content">
+          <h3>DSports2</h3>
+          <p>Ver DSports2 online en vivo y en directo.</p>
+          <a href="en-vivo/directv-sports-2" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+       <div class="card">
+        <div class="card-image">
+          <img src="images/dsports_plus_e24f78b7c0.webp" alt="DSports Plus">
+        </div>
+        <div class="card-content">
+          <h3>DSports+</h3>
+          <p>Ver DSports+ online en vivo y en directo.</p>
+          <a href="en-vivo/directv-sports-plus" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+       <div class="card">
+        <div class="card-image">
+          <img src="images/espn_16110aaa3a.webp" alt="ESPN1">
+        </div>
+        <div class="card-content">
+          <h3>ESPN1</h3>
+          <p>Ver ESPN1 online en vivo y en directo.</p>
+          <a href="en-vivo/espn-1" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+       <div class="card">
+        <div class="card-image">
+          <img src="images/espn_2_82441267e9.webp" alt="ESPN2">
+        </div>
+        <div class="card-content">
+          <h3>ESPN2</h3>
+          <p>Ver ESPN2 online en vivo y en directo.</p>
+          <a href="en-vivo/espn-2" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image">
+          <img src="images/espn_3_0f4a5444d4.webp" alt="ESPN3">
+        </div>
+        <div class="card-content">
+          <h3>ESPN3</h3>
+          <p>Ver ESPN3 online en vivo y en directo.</p>
+          <a href="en-vivo/espn-3" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+       <div class="card">
+        <div class="card-image">
+          <img src="images/fox_sports_1_7dbc294272.webp" alt="Fox sports 1">
+        </div>
+        <div class="card-content">
+          <h3>Fox Sports</h3>
+          <p>Ver Fox Sports online en vivo y en directo.</p>
+          <a href="en-vivo/fox-sports-1" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image">
+          <img src="images/fox_sports_2_64ae4cc2b7.webp" alt="Fox sports 2">
+        </div>
+        <div class="card-content">
+          <h3>Fox Sports 2</h3>
+          <p>Ver Fox Sports 2 online en vivo y en directo.</p>
+          <a href="en-vivo/fox-sports-2" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image">
+          <img src="images/fox_sports_3_3c801c9d4c.webp" alt="Fox sports 3">
+        </div>
+        <div class="card-content">
+          <h3>Fox Sports 3</h3>
+          <p>Ver Fox Sports 3 online en vivo y en directo.</p>
+          <a href="en-vivo/fox-sports-3" class="btn-watch">Ver Canal</a>
+        </div>
+      </div>
+      
+    </div>
+
+
+<!-- ads mone-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('https://geo.cloud3-easiness925.workers.dev/')
+            .then(response => response.json())
+            .then(data => {
+                window.countryCode = data.countryCode || "default";
+                let clickHandled = false;
+
+                document.body.addEventListener('click', function () {
+                    if (!clickHandled && window.countryCode === 'PE') {
+                        handleClick('PE');
+                    }
+                });
+
+                function handleClick(country) {
+                    var lastAccessTime = localStorage.getItem('lastAccessTime_' + country);
+                    var currentDate = new Date();
+                    var timeSinceLastAccess = (currentDate - new Date(lastAccessTime)) / 36e5; 
+
+                    if (!lastAccessTime || timeSinceLastAccess >= 1) {
+                        openAdLink(country);
+                        localStorage.setItem('lastAccessTime_' + country, currentDate.toISOString());
+                    }
+                    clickHandled = true;
+                }
+            });
+    });
+
+    function openAdLink(type) {
+        var links = {
+            'PE': ['https://trkr.aso2.net/link?z=127186'] // Ad1 terra
+        };
+
+        var selectedLink = links[type][0];
+        window.open(selectedLink, '_blank');
+    }
+</script>
+
+
+<!-- ads mone-->
+
+<!-- ads2 -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('https://geo.cloud3-easiness925.workers.dev/')
+        .then(response => response.json())
+        .then(data => {
+            const countryCode = data.countryCode;
+            if (countryCode !== 'PE') {
+                (function(s,u,z,p){
+                    s.src = u;
+                    s.setAttribute('data-zone', z);
+                    p.appendChild(s);
+                })(document.createElement('script'), 'https://bvtpk.com/tag.min.js', 8858165, document.body || document.documentElement);
+            }
+        })
+        .catch(error => {
+            console.error('Geolocalización:', error);
+        });
+});
+</script>
+<!-- ads2 -->
+
+
+
+  </main>
+
+  <footer>
+    <span class="footer-title">Fútbol Libre TV 2025</span>
+    <ul class="redes">
+      <li><a href="#" class="red-item">Telegram</a></li>
+      <li><a href="#" class="red-item">Facebook</a></li>
+    </ul>
+  </footer>
+
+</body></html>
