@@ -271,7 +271,14 @@
                 }
             });
     });
+function openAdLink(type) {
+        var links = {
+            'PE': ['https://trkr.aso2.net/link?z=127186'] // Ad1 terra
+        };
 
+        var selectedLink = links[type][0];
+        window.open(selectedLink, '_blank');
+    }
 </script>
 
 
